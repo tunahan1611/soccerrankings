@@ -1,1 +1,1 @@
-# soccerrankings
+# soccerRankings
