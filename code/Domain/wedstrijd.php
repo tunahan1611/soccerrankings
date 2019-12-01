@@ -4,6 +4,7 @@ class Wedstrijden {
 	private $_aantalPuntenUitTeam = 0;
 	private $_goalsUitTeam = 0;
 	private $_goalsThuisTeam = 0;
+  private $_eindstand = null;
 
 
 	public function __construct(integer $aantalPuntenThuisTeam, integer $aantalPuntenUitTeam) {

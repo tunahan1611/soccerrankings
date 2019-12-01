@@ -4,7 +4,6 @@ class Eindstand {
 
 	public function ScoreBijhouden($score) {
 		$this->_score = $score;
-		
 		// score moet in array ranschikking komen.
 	}
 }
