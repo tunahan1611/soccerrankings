@@ -17,7 +17,7 @@ class Wedstrijden {
 		$this->_goalsThuisTeam = $goalsThuisTeam;
 	}
   
-	public function PuntenGeven(integer $aantalPuntenThuisTeam, integer $aantalPuntenUitTeam int, $goalsUitTeam int, $goalsThuisTeam) {	
+	public function PuntenGeven(integer $aantalPuntenThuisTeam, integer $aantalPuntenUitTeam, integer $goalsUitTeam, integer $goalsThuisTeam) {	
 		if ($goalsThuisTeam > $goalsUitTeam) {
 			$aantalPuntenThuisTeam + 3;
 		}
