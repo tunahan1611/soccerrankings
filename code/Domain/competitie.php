@@ -15,7 +15,7 @@ class Competitie {
 	}
 
   //Deze functie berekent het verschil tussen de voor- en tegendoelpunten om zo het saldo te bekomen.
-	public function VerschilBerekenen() {
+	public function VerschilBerekenen()  {
 		$saldo = $voorDoelpunten - $tegenDoelpunten;
 		return $saldo;
 	}
@@ -26,12 +26,12 @@ class Competitie {
   }
   
   //Deze functie zorgt ervoor dat het aantal goals gescoord door de ploeg word upgedadet, door de voor doelpunten van de nieuwe match erbij te tellen.
-  public function VoorDoelpuntenOptellen() {
+  public function VoorDoelpuntenOptellen()  {
     $huidigeVoorDoelpunten = $huidigeVoorDoelpunten + $voorDoelpunten;
   }
   
   //Deze functie berekenen we het totaal aantal tegendelpunten van een club, door de tegendoelpunten bij de al verkregen tegendoelpunten te tellen.
-  public function TegenDoelpuntenOptellen() {
+  public function TegenDoelpuntenOptellen()  {
     $huidigeTegenDoelpunten = $huidgeTegenDoelpunten + $tegenDoelpunten;
   }
 }
