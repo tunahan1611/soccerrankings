@@ -3,10 +3,38 @@
   font-family: "Montserrat", sans-serif;
 }
 
+div#menuZijkant {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+div#menuZijkant {
+  display: block;
+}
+
+div#menuZijkant>img {
+  width: 190px;
+}
+
+div#menuZijkant>ul {
+	list-style-type: none;
+}
+
+div#menuZijkant>ul>li>a {
+  text-decoration: none;
+  color: #757575;
+} 
+
+div#menuZijkant>ul>li {
+  padding-top: 50px;
+} 
+
 div#gridContainer {
   display: grid;
   grid-template-columns: 200px auto;
-  grid-template-rows: auto auto auto auto ;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas: "menuZijkant  menuBovekant"
                        "menuZijkant  klassement"
                        "menuZijkant  kalender"
@@ -18,22 +46,7 @@ div#gridContainer>div#menuZijkant {
 	grid-area: menuZijkant;
 }
 
-div#gridContainer>div#menuZijkant>img {
-  width: 190px;
-}
 
-div#gridContainer>div#menuZijkant>ul {
-	list-style-type: none;
-}
-
-div#gridContainer>div#menuZijkant>ul>li>a {
-  text-decoration: none;
-  color: #757575;
-} 
-
-div#gridContainer>div#menuZijkant>ul>li {
-  padding-top: 50px;
-} 
 div#gridContainer>div#menuBovekant {
 	grid-area: menuBovekant;
   
