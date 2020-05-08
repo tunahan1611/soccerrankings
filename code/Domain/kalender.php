@@ -1,9 +1,9 @@
 <?php
 class Kalender {
-	private $_dag = null;
-	private $_maand = null;
-	private $_jaar = null;
-	private $_uur = null;
+	private $_dag = 0;
+	private $_maand = "";
+	private $_jaar = 0;
+	private $_uur = "";
 
   //In deze contrsuct functie geven we de waarde van maand, dag, jaar en uur mee zodat we deze kunnen gerbuiken.
 	public function __construct($dag, $maand, $jaar, $uur) {
@@ -38,12 +38,13 @@ class Kalender {
     $result = "$this->_dag/";
     $result .= "$this->_maand/";
     $result .= "$this->_jaar ";
-    $result .= $this->_uur;
-
-  return $result;
+    $result .= "$this->_uur";
+    
+    return $result;
   }
-  
 }
-$match1 = new Kalender ("15", "11", "2019", "16:45");
+
+$match1 = new Kalender (15, 'november', 2019, '16:45');
 echo $match1->DatumWeergeven();
+
 ?>

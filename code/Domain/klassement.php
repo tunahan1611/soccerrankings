@@ -133,11 +133,8 @@ class Klassement {
   "Doelpunten voor" => $voorDoelpunten,
   "Doelpunten tegen" => $tegenDoelpunten,
   "Verschil" => $saldo ),
-
   );
-  return $vragen;
-}
- 
-  
+    return $teams;
+  }
 } 
 ?>

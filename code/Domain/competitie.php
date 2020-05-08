@@ -22,17 +22,22 @@ class Competitie {
   
   //Deze functie zorgt ervoor dat de nieuwe punten bij de oude punten worden opgeteld om ze de actule punten stand te komen.
   public function PuntenOptellen() {
-    $huidigePunten = $huidigePunten + $punten;
+    $this->_huidigePunten = $huidigePunten + $punten;
   }
   
   //Deze functie zorgt ervoor dat het aantal goals gescoord door de ploeg word upgedadet, door de voor doelpunten van de nieuwe match erbij te tellen.
   public function VoorDoelpuntenOptellen()  {
-    $huidigeVoorDoelpunten = $huidigeVoorDoelpunten + $voorDoelpunten;
+    $this->_huidigeVoorDoelpunten = $huidigeVoorDoelpunten + $voorDoelpunten;
   }
   
   //Deze functie berekenen we het totaal aantal tegendelpunten van een club, door de tegendoelpunten bij de al verkregen tegendoelpunten te tellen.
   public function TegenDoelpuntenOptellen()  {
-    $huidigeTegenDoelpunten = $huidgeTegenDoelpunten + $tegenDoelpunten;
+    $this->_huidigeTegenDoelpunten = $huidgeTegenDoelpunten + $tegenDoelpunten;
+  }
+  
+  //Deze functie geeft het klassement terug weer.
+  public function GetKlassement() {
+    return $klassement;
   }
 }
 ?>
